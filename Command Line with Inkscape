@@ -1,0 +1,8 @@
+# Install Inkscape first, then run:
+for size in 72 96 128 144 152 192 384 512; do
+  inkscape icon-master.svg --export-width=$size --export-height=$size --export-filename=public/icons/icon-${size}x${size}.png
+done
+
+inkscape maskable-icon-master.svg --export-width=512 --export-height=512 --export-filename=public/icons/maskable-icon-512x512.png
+
+inkscape icon-master.svg --export-width=180 --export-height=180 --export-filename=public/apple-touch-icon.png
