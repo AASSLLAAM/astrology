@@ -1,0 +1,72 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1035"/>
+      <stop offset="50%" style="stop-color:#2d1b4e"/>
+      <stop offset="100%" style="stop-color:#0f0a1e"/>
+    </linearGradient>
+    <linearGradient id="palmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <filter id="glowEffect">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Full background (maskable requires full coverage) -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+  
+  <!-- Safe zone content (centered, 80% of canvas = 410px, centered at 256) -->
+  <!-- Palm icon scaled to fit within safe zone -->
+  <g transform="translate(256, 270)" filter="url(#glowEffect)">
+    <g transform="scale(0.65)">
+      <!-- Simplified palm shape -->
+      <path d="
+        M-80 60 
+        Q-85 20, -70 -20
+        Q-60 -50, -45 -80
+        L-40 -120
+        Q-38 -145, -25 -150
+        Q-12 -155, -5 -140
+        L0 -100
+        L5 -160
+        Q8 -185, 22 -190
+        Q36 -195, 42 -175
+        L45 -130
+        L55 -170
+        Q58 -190, 72 -192
+        Q86 -194, 90 -175
+        L85 -120
+        L95 -145
+        Q100 -165, 112 -165
+        Q124 -165, 125 -145
+        L115 -80
+        Q120 -40, 110 0
+        Q100 40, 80 60
+        Z
+      " fill="url(#palmGrad)"/>
+      
+      <!-- Palm lines -->
+      <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7">
+        <path d="M-50 -10 Q0 -30, 60 -15" stroke-linecap="round"/>
+        <path d="M-55 15 Q-10 5, 50 20" stroke-linecap="round"/>
+        <path d="M-30 -40 Q-50 10, -40 50" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Center mystic eye -->
+      <circle cx="0" cy="5" r="15" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+      <circle cx="0" cy="5" r="6" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- Subtle stars in safe zone -->
+  <circle cx="150" cy="130" r="3" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="362" cy="120" r="2.5" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="130" cy="380" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="382" cy="390" r="2.5" fill="#ffffff" opacity="0.4"/>
+</svg>
