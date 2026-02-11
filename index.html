@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+  <!-- Mobile Optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#1a1035" />
+  <meta name="background-color" content="#0f0a1e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Palm Reader" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="AI Palm Reader" />
+  <meta name="msapplication-TileColor" content="#1a1035" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover your destiny through AI-powered palm reading, tarot cards, horoscopes, and personalized astrology guidance." />
+  <meta name="keywords" content="palm reading, tarot, astrology, horoscope, AI, spiritual guidance" />
+  <meta name="author" content="AI Palm Reader" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Palm Reader - Tarot & Astrology Guidance" />
+  <meta property="og:description" content="Discover your destiny through AI-powered palm reading, tarot cards, and personalized astrology guidance." />
+  <meta property="og:image" content="/icons/icon-512x512.png" />
+  <meta property="og:url" content="https://ai-palm-reader.app" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Palm Reader" />
+  <meta name="twitter:description" content="AI-powered palm reading, tarot, and astrology guidance." />
+  <meta name="twitter:image" content="/icons/icon-512x512.png" />
+  
+  <!-- Favicons & Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://openrouter.ai" />
+  
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <title>AI Palm Reader - Tarot & Astrology Guidance</title>
+
+  <!-- Splash Screen Inline Styles (shows before React loads) -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0a1e;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
+    #root {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Pre-React Loading Screen */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0f0a1e 0%, #1a1035 50%, #0d1b2a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      transition: opacity 0.5s ease;
+    }
+
+    #preloader.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .preloader-icon {
+      width: 80px;
+      height: 80px;
+      border: 3px solid rgba(99, 102, 241, 0.3);
+      border-top-color: #a855f7;
+      border-radius: 50%;
+      animation: preloader-spin 1s linear infinite;
+    }
+
+    .preloader-text {
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.6);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    @keyframes preloader-spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Pre-React Preloader (hides once React mounts) -->
+  <div id="preloader">
+    <div class="preloader-icon"></div>
+    <div class="preloader-text">ALIGNING THE STARS</div>
+  </div>
+
+  <!-- React Root -->
+  <div id="root"></div>
+
+  <!-- Inline script to hide preloader once React renders -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('hidden');
+          setTimeout(function() {
+            preloader.remove();
+          }, 500);
+        }
+      }, 800);
+    });
+  </script>
+
+  <!-- Main App Entry -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
