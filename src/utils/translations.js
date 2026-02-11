@@ -705,4 +705,735 @@ export const translations = {
 
     disclaimer: {
       text: 'Solo para entretenimiento y autoreflexión. No sustituye el consejo profesional.',
-      short: 
+      short: 'Solo para guía y reflexión'
+    },
+
+    errors: {
+      network: 'Sin conexión a internet. Por favor verifica tu red.',
+      api: 'Servicio temporalmente no disponible. Intenta más tarde.',
+      image: 'No se pudo procesar la imagen. Intenta con otra foto.',
+      noHand: 'No se detectó una mano en la imagen. Intenta de nuevo.',
+      generic: 'Algo salió mal. Por favor intenta de nuevo.'
+    },
+
+    rate: {
+      title: '¿Disfrutas AI Palm Reader?',
+      message: 'Si encuentras nuestra app útil, ¿nos calificarías?',
+      rateNow: 'Calificar Ahora',
+      later: 'Quizás Después',
+      noThanks: 'No Gracias'
+    },
+
+    network: {
+      offline: 'Estás sin conexión',
+      online: '¡De vuelta en línea!'
+    }
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🇫🇷 FRENCH
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  fr: {
+    languageName: 'Français',
+
+    splash: {
+      title: 'Lecteur de Paume IA',
+      subtitle: 'Tarot et Guide Astrologique',
+      loading: 'Alignement des étoiles...'
+    },
+
+    languageSelect: {
+      title: 'Choisissez Votre Langue',
+      subtitle: 'Sélectionnez la langue de votre voyage cosmique',
+      continue: 'Continuer'
+    },
+
+    onboarding: {
+      skip: 'Passer',
+      next: 'Suivant',
+      getStarted: 'Commencer',
+      slide1: {
+        title: 'Sagesse du Tarot',
+        description: 'Débloquez la sagesse ancestrale des cartes de tarot. Obtenez des lectures personnalisées pour l\'amour, la carrière, les finances et la croissance personnelle.'
+      },
+      slide2: {
+        title: 'Secrets de la Paume',
+        description: 'Vos paumes renferment des histoires profondes. Laissez l\'IA analyser vos lignes de cœur, de tête, de vie et de destin.'
+      },
+      slide3: {
+        title: 'Guidance IA',
+        description: 'Vivez une guidance spirituelle alimentée par l\'IA avancée. Obtenez des aperçus quotidiens, des horoscopes et des lectures d\'énergie cosmique.'
+      }
+    },
+
+    profile: {
+      title: 'Créez Votre Profil',
+      subtitle: 'Personnalisez votre expérience cosmique',
+      name: 'Votre Nom',
+      namePlaceholder: 'Entrez votre nom',
+      dob: 'Date de Naissance',
+      dobPlaceholder: 'Sélectionnez votre date de naissance',
+      timeOfBirth: 'Heure de Naissance',
+      timePlaceholder: 'Sélectionnez l\'heure (optionnel)',
+      gender: 'Genre',
+      male: 'Masculin',
+      female: 'Féminin',
+      other: 'Autre',
+      save: 'Commencer Mon Voyage',
+      errors: {
+        nameRequired: 'Veuillez entrer votre nom',
+        nameTooShort: 'Le nom doit contenir au moins 2 caractères',
+        dobRequired: 'Veuillez sélectionner votre date de naissance',
+        futureDate: 'La date de naissance ne peut pas être dans le futur',
+        genderRequired: 'Veuillez sélectionner votre genre'
+      }
+    },
+
+    home: {
+      greeting: 'Bienvenue',
+      subtitle: 'Que souhaitez-vous explorer aujourd\'hui?',
+      aiChat: 'Chat IA Paume',
+      aiChatDesc: 'Posez n\'importe quelle question sur votre destin',
+      features: {
+        palmScan: 'Scan de Paume',
+        tarot: 'Lecture de Tarot',
+        love: 'Lecture d\'Amour',
+        daily: 'Guide Quotidien',
+        horoscope: 'Horoscope'
+      }
+    },
+
+    palm: {
+      title: 'Lecture de Paume',
+      selectHand: 'Sélectionnez Votre Main',
+      leftHand: 'Main Gauche',
+      rightHand: 'Main Droite',
+      leftDesc: 'Révèle votre potentiel et vos traits hérités',
+      rightDesc: 'Montre votre chemin actuel et vos choix',
+      scanGuide: 'Comment Scanner',
+      guideSteps: {
+        step1: 'Placez votre main sur une surface plane et bien éclairée',
+        step2: 'Écartez légèrement vos doigts',
+        step3: 'Assurez-vous que toutes les lignes sont clairement visibles',
+        step4: 'Prenez une photo ou téléchargez une image'
+      },
+      takePhoto: 'Prendre une Photo',
+      uploadImage: 'Télécharger une Image',
+      scanning: 'Analyse des lignes de votre paume...',
+      result: {
+        title: 'Votre Lecture de Paume',
+        heartLine: 'Ligne de Cœur',
+        headLine: 'Ligne de Tête',
+        lifeLine: 'Ligne de Vie',
+        fateLine: 'Ligne du Destin',
+        heartDesc: 'Expression émotionnelle et relations',
+        headDesc: 'Style intellectuel et schémas de pensée',
+        lifeDesc: 'Vitalité, santé et énergie vitale',
+        fateDesc: 'Chemin du destin et direction de carrière',
+        fullReading: 'Interprétation Complète',
+        scanAgain: 'Scanner à Nouveau',
+        share: 'Partager la Lecture'
+      }
+    },
+
+    chat: {
+      title: 'Chat IA Paume',
+      welcome: 'Bonjour! Je suis votre guide spirituel. Interrogez-moi sur la chiromancie, l\'astrologie ou cherchez des conseils sur n\'importe quel aspect de votre vie.',
+      placeholder: 'Posez une question sur votre destin...',
+      send: 'Envoyer',
+      thinking: 'Consultation du cosmos...',
+      error: 'La connexion cosmique a été interrompue. Veuillez réessayer.',
+      suggestions: [
+        'Que révèle ma ligne de cœur?',
+        'Parlez-moi de mon énergie zodiacale aujourd\'hui',
+        'Quelle guidance les étoiles m\'offrent-elles?',
+        'Comment attirer l\'énergie positive?'
+      ]
+    },
+
+    tarot: {
+      title: 'Lecture de Tarot',
+      subtitle: 'Choisissez une catégorie pour votre lecture',
+      categories: {
+        love: 'Amour',
+        career: 'Carrière',
+        finance: 'Finances',
+        growth: 'Croissance Personnelle'
+      },
+      categoryDesc: {
+        love: 'Explorez les relations, la romance et les liens émotionnels',
+        career: 'Perspectives sur le travail, l\'ambition et le parcours professionnel',
+        finance: 'Guidance sur la richesse, les investissements et l\'abondance',
+        growth: 'Découverte de soi, spiritualité et force intérieure'
+      },
+      shuffling: 'Mélange du jeu cosmique...',
+      tapToReveal: 'Touchez une carte pour révéler sa sagesse',
+      yourCards: 'Vos Cartes',
+      reading: 'Votre Interprétation du Tarot',
+      drawAgain: 'Tirer à Nouveau',
+      share: 'Partager la Lecture'
+    },
+
+    daily: {
+      title: 'Guide du Jour',
+      energy: 'Énergie du Jour',
+      focus: 'Focus Émotionnel',
+      embrace: 'Embrassez',
+      avoid: 'Évitez',
+      lucky: 'Élément Chanceux',
+      share: 'Partager le Guide',
+      refresh: 'Nouveau Guide'
+    },
+
+    horoscope: {
+      title: 'Horoscope',
+      subtitle: 'Sélectionnez votre signe zodiacal',
+      yourSign: 'Votre Signe',
+      mood: 'Humeur',
+      love: 'Amour',
+      career: 'Carrière',
+      advice: 'Conseil',
+      share: 'Partager l\'Horoscope'
+    },
+
+    love: {
+      title: 'Lecture d\'Amour',
+      subtitle: 'Découvrez votre énergie romantique',
+      compatibility: 'Compatibilité',
+      energy: 'Énergie Amoureuse',
+      guidance: 'Guide du Cœur',
+      share: 'Partager la Lecture'
+    },
+
+    settings: {
+      title: 'Paramètres',
+      language: 'Langue',
+      shareApp: 'Partager l\'App',
+      rateApp: 'Noter l\'App',
+      privacy: 'Politique de Confidentialité',
+      about: 'À Propos',
+      version: 'Version'
+    },
+
+    common: {
+      loading: 'Chargement...',
+      error: 'Une erreur est survenue',
+      retry: 'Réessayer',
+      back: 'Retour',
+      close: 'Fermer',
+      share: 'Partager',
+      save: 'Enregistrer',
+      cancel: 'Annuler',
+      confirm: 'Confirmer',
+      yes: 'Oui',
+      no: 'Non',
+      ok: 'OK'
+    },
+
+    exit: {
+      title: 'Quitter l\'App',
+      message: 'Êtes-vous sûr de vouloir partir?',
+      toast: 'Appuyez à nouveau pour quitter',
+      stay: 'Rester',
+      leave: 'Quitter'
+    },
+
+    disclaimer: {
+      text: 'Uniquement à des fins de divertissement et de réflexion personnelle. Ne remplace pas un conseil professionnel.',
+      short: 'Pour guidance et réflexion uniquement'
+    },
+
+    errors: {
+      network: 'Pas de connexion internet. Vérifiez votre réseau.',
+      api: 'Service temporairement indisponible. Réessayez plus tard.',
+      image: 'Impossible de traiter l\'image. Essayez une autre photo.',
+      noHand: 'Aucune main détectée dans l\'image. Réessayez.',
+      generic: 'Une erreur est survenue. Veuillez réessayer.'
+    },
+
+    rate: {
+      title: 'Vous aimez AI Palm Reader?',
+      message: 'Si notre app vous est utile, pourriez-vous nous noter?',
+      rateNow: 'Noter Maintenant',
+      later: 'Plus Tard',
+      noThanks: 'Non Merci'
+    },
+
+    network: {
+      offline: 'Vous êtes hors ligne',
+      online: 'De retour en ligne!'
+    }
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🇮🇹 ITALIAN
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  it: {
+    languageName: 'Italiano',
+
+    splash: {
+      title: 'Lettore di Palmo IA',
+      subtitle: 'Tarocchi e Guida Astrologica',
+      loading: 'Allineando le stelle...'
+    },
+
+    languageSelect: {
+      title: 'Scegli La Tua Lingua',
+      subtitle: 'Seleziona la lingua per il tuo viaggio cosmico',
+      continue: 'Continua'
+    },
+
+    onboarding: {
+      skip: 'Salta',
+      next: 'Avanti',
+      getStarted: 'Inizia',
+      slide1: {
+        title: 'Saggezza dei Tarocchi',
+        description: 'Sblocca l\'antica saggezza dei tarocchi. Ottieni letture personalizzate per amore, carriera, finanze e crescita personale.'
+      },
+      slide2: {
+        title: 'Segreti del Palmo',
+        description: 'I tuoi palmi custodiscono storie profonde. Lascia che l\'IA analizzi le tue linee del cuore, della testa, della vita e del destino.'
+      },
+      slide3: {
+        title: 'Guida IA',
+        description: 'Sperimenta la guida spirituale alimentata dall\'IA avanzata. Ottieni intuizioni quotidiane, oroscopi e letture di energia cosmica.'
+      }
+    },
+
+    profile: {
+      title: 'Crea Il Tuo Profilo',
+      subtitle: 'Personalizza la tua esperienza cosmica',
+      name: 'Il Tuo Nome',
+      namePlaceholder: 'Inserisci il tuo nome',
+      dob: 'Data di Nascita',
+      dobPlaceholder: 'Seleziona la tua data di nascita',
+      timeOfBirth: 'Ora di Nascita',
+      timePlaceholder: 'Seleziona l\'ora (opzionale)',
+      gender: 'Genere',
+      male: 'Maschile',
+      female: 'Femminile',
+      other: 'Altro',
+      save: 'Inizia Il Mio Viaggio',
+      errors: {
+        nameRequired: 'Per favore inserisci il tuo nome',
+        nameTooShort: 'Il nome deve avere almeno 2 caratteri',
+        dobRequired: 'Per favore seleziona la tua data di nascita',
+        futureDate: 'La data di nascita non può essere nel futuro',
+        genderRequired: 'Per favore seleziona il tuo genere'
+      }
+    },
+
+    home: {
+      greeting: 'Benvenuto',
+      subtitle: 'Cosa vorresti esplorare oggi?',
+      aiChat: 'Chat IA Palmo',
+      aiChatDesc: 'Chiedi qualsiasi cosa sul tuo destino',
+      features: {
+        palmScan: 'Scansione Palmo',
+        tarot: 'Lettura Tarocchi',
+        love: 'Lettura d\'Amore',
+        daily: 'Guida Quotidiana',
+        horoscope: 'Oroscopo'
+      }
+    },
+
+    palm: {
+      title: 'Lettura del Palmo',
+      selectHand: 'Seleziona La Tua Mano',
+      leftHand: 'Mano Sinistra',
+      rightHand: 'Mano Destra',
+      leftDesc: 'Rivela il tuo potenziale e i tratti ereditati',
+      rightDesc: 'Mostra il tuo percorso attuale e le scelte',
+      scanGuide: 'Come Scansionare',
+      guideSteps: {
+        step1: 'Posiziona la mano su una superficie piana e ben illuminata',
+        step2: 'Separa leggermente le dita',
+        step3: 'Assicurati che tutte le linee siano chiaramente visibili',
+        step4: 'Scatta una foto o carica un\'immagine'
+      },
+      takePhoto: 'Scatta Foto',
+      uploadImage: 'Carica Immagine',
+      scanning: 'Analisi delle linee del palmo...',
+      result: {
+        title: 'La Tua Lettura del Palmo',
+        heartLine: 'Linea del Cuore',
+        headLine: 'Linea della Testa',
+        lifeLine: 'Linea della Vita',
+        fateLine: 'Linea del Destino',
+        heartDesc: 'Espressione emotiva e relazioni',
+        headDesc: 'Stile intellettuale e schemi di pensiero',
+        lifeDesc: 'Vitalità, salute ed energia vitale',
+        fateDesc: 'Percorso del destino e direzione di carriera',
+        fullReading: 'Interpretazione Completa',
+        scanAgain: 'Scansiona di Nuovo',
+        share: 'Condividi Lettura'
+      }
+    },
+
+    chat: {
+      title: 'Chat IA Palmo',
+      welcome: 'Ciao! Sono la tua guida spirituale. Chiedimi di chiromanzia, astrologia o cerca guida su qualsiasi aspetto della tua vita.',
+      placeholder: 'Chiedi del tuo destino...',
+      send: 'Invia',
+      thinking: 'Consultando il cosmo...',
+      error: 'La connessione cosmica è stata interrotta. Per favore riprova.',
+      suggestions: [
+        'Cosa rivela la mia linea del cuore?',
+        'Parlami della mia energia zodiacale oggi',
+        'Quale guida mi offrono le stelle?',
+        'Come posso attrarre energia positiva?'
+      ]
+    },
+
+    tarot: {
+      title: 'Lettura Tarocchi',
+      subtitle: 'Scegli una categoria per la tua lettura',
+      categories: {
+        love: 'Amore',
+        career: 'Carriera',
+        finance: 'Finanze',
+        growth: 'Crescita Personale'
+      },
+      categoryDesc: {
+        love: 'Esplora relazioni, romanticismo e legami emotivi',
+        career: 'Prospettive su lavoro, ambizione e percorso professionale',
+        finance: 'Guida su ricchezza, investimenti e abbondanza',
+        growth: 'Scoperta di sé, spiritualità e forza interiore'
+      },
+      shuffling: 'Mescolando il mazzo cosmico...',
+      tapToReveal: 'Tocca una carta per rivelare la sua saggezza',
+      yourCards: 'Le Tue Carte',
+      reading: 'La Tua Interpretazione dei Tarocchi',
+      drawAgain: 'Pesca di Nuovo',
+      share: 'Condividi Lettura'
+    },
+
+    daily: {
+      title: 'Guida di Oggi',
+      energy: 'Energia di Oggi',
+      focus: 'Focus Emotivo',
+      embrace: 'Abbraccia',
+      avoid: 'Evita',
+      lucky: 'Elemento Fortunato',
+      share: 'Condividi Guida',
+      refresh: 'Nuova Guida'
+    },
+
+    horoscope: {
+      title: 'Oroscopo',
+      subtitle: 'Seleziona il tuo segno zodiacale',
+      yourSign: 'Il Tuo Segno',
+      mood: 'Umore',
+      love: 'Amore',
+      career: 'Carriera',
+      advice: 'Consiglio',
+      share: 'Condividi Oroscopo'
+    },
+
+    love: {
+      title: 'Lettura d\'Amore',
+      subtitle: 'Scopri la tua energia romantica',
+      compatibility: 'Compatibilità',
+      energy: 'Energia d\'Amore',
+      guidance: 'Guida del Cuore',
+      share: 'Condividi Lettura'
+    },
+
+    settings: {
+      title: 'Impostazioni',
+      language: 'Lingua',
+      shareApp: 'Condividi App',
+      rateApp: 'Valuta App',
+      privacy: 'Politica sulla Privacy',
+      about: 'Informazioni',
+      version: 'Versione'
+    },
+
+    common: {
+      loading: 'Caricamento...',
+      error: 'Qualcosa è andato storto',
+      retry: 'Riprova',
+      back: 'Indietro',
+      close: 'Chiudi',
+      share: 'Condividi',
+      save: 'Salva',
+      cancel: 'Annulla',
+      confirm: 'Conferma',
+      yes: 'Sì',
+      no: 'No',
+      ok: 'OK'
+    },
+
+    exit: {
+      title: 'Esci dall\'App',
+      message: 'Sei sicuro di voler uscire?',
+      toast: 'Premi ancora per uscire',
+      stay: 'Resta',
+      leave: 'Esci'
+    },
+
+    disclaimer: {
+      text: 'Solo per intrattenimento e riflessione personale. Non sostituisce il consiglio professionale.',
+      short: 'Solo per guida e riflessione'
+    },
+
+    errors: {
+      network: 'Nessuna connessione internet. Controlla la tua rete.',
+      api: 'Servizio temporaneamente non disponibile. Riprova più tardi.',
+      image: 'Impossibile elaborare l\'immagine. Prova un\'altra foto.',
+      noHand: 'Nessuna mano rilevata nell\'immagine. Riprova.',
+      generic: 'Qualcosa è andato storto. Per favore riprova.'
+    },
+
+    rate: {
+      title: 'Ti piace AI Palm Reader?',
+      message: 'Se trovi la nostra app utile, ci valuteresti?',
+      rateNow: 'Valuta Ora',
+      later: 'Forse Dopo',
+      noThanks: 'No Grazie'
+    },
+
+    network: {
+      offline: 'Sei offline',
+      online: 'Di nuovo online!'
+    }
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🇰🇷 KOREAN
+  // ━━━━━━━━━━━━━━━━━━━━━━━━
+  ko: {
+    languageName: '한국어',
+
+    splash: {
+      title: 'AI 손금 리더',
+      subtitle: '타로 & 점성술 가이드',
+      loading: '별들을 정렬하는 중...'
+    },
+
+    languageSelect: {
+      title: '언어를 선택하세요',
+      subtitle: '우주 여행을 위한 언어를 선택하세요',
+      continue: '계속하기'
+    },
+
+    onboarding: {
+      skip: '건너뛰기',
+      next: '다음',
+      getStarted: '시작하기',
+      slide1: {
+        title: '타로의 지혜',
+        description: '타로 카드의 고대 지혜를 풀어보세요. 사랑, 경력, 재정 및 개인 성장에 대한 맞춤형 리딩을 받으세요.'
+      },
+      slide2: {
+        title: '손금의 비밀',
+        description: '당신의 손바닥에는 깊은 이야기가 담겨 있습니다. AI가 심장선, 두뇌선, 생명선, 운명선을 분석하게 하세요.'
+      },
+      slide3: {
+        title: 'AI 가이던스',
+        description: '고급 AI로 구동되는 영적 안내를 경험하세요. 일일 인사이트, 운세 및 우주 에너지 리딩을 받으세요.'
+      }
+    },
+
+    profile: {
+      title: '프로필 만들기',
+      subtitle: '우주적 경험을 개인화하세요',
+      name: '이름',
+      namePlaceholder: '이름을 입력하세요',
+      dob: '생년월일',
+      dobPlaceholder: '생년월일을 선택하세요',
+      timeOfBirth: '출생 시간',
+      timePlaceholder: '시간 선택 (선택사항)',
+      gender: '성별',
+      male: '남성',
+      female: '여성',
+      other: '기타',
+      save: '여정 시작하기',
+      errors: {
+        nameRequired: '이름을 입력해 주세요',
+        nameTooShort: '이름은 최소 2자 이상이어야 합니다',
+        dobRequired: '생년월일을 선택해 주세요',
+        futureDate: '생년월일은 미래일 수 없습니다',
+        genderRequired: '성별을 선택해 주세요'
+      }
+    },
+
+    home: {
+      greeting: '환영합니다',
+      subtitle: '오늘 무엇을 탐구하고 싶으신가요?',
+      aiChat: 'AI 손금 채팅',
+      aiChatDesc: '운명에 대해 무엇이든 물어보세요',
+      features: {
+        palmScan: '손금 스캔',
+        tarot: '타로 리딩',
+        love: '사랑 리딩',
+        daily: '일일 가이던스',
+        horoscope: '운세'
+      }
+    },
+
+    palm: {
+      title: '손금 읽기',
+      selectHand: '손을 선택하세요',
+      leftHand: '왼손',
+      rightHand: '오른손',
+      leftDesc: '잠재력과 물려받은 특성을 나타냅니다',
+      rightDesc: '현재의 길과 선택을 보여줍니다',
+      scanGuide: '스캔 방법',
+      guideSteps: {
+        step1: '평평하고 조명이 좋은 표면에 손을 놓으세요',
+        step2: '손가락을 약간 벌리세요',
+        step3: '모든 손금이 선명하게 보이는지 확인하세요',
+        step4: '사진을 찍거나 이미지를 업로드하세요'
+      },
+      takePhoto: '사진 찍기',
+      uploadImage: '이미지 업로드',
+      scanning: '손금을 분석하는 중...',
+      result: {
+        title: '당신의 손금 리딩',
+        heartLine: '심장선',
+        headLine: '두뇌선',
+        lifeLine: '생명선',
+        fateLine: '운명선',
+        heartDesc: '감정 표현과 관계',
+        headDesc: '지적 스타일과 사고 패턴',
+        lifeDesc: '활력, 건강 및 생명 에너지',
+        fateDesc: '운명의 길과 경력 방향',
+        fullReading: '전체 해석',
+        scanAgain: '다시 스캔',
+        share: '리딩 공유'
+      }
+    },
+
+    chat: {
+      title: 'AI 손금 채팅',
+      welcome: '안녕하세요! 저는 당신의 영적 안내자입니다. 손금, 점성술에 대해 물어보거나 삶의 어떤 측면에 대해 안내를 구하세요.',
+      placeholder: '운명에 대해 물어보세요...',
+      send: '보내기',
+      thinking: '우주와 상담 중...',
+      error: '우주적 연결이 중단되었습니다. 다시 시도해 주세요.',
+      suggestions: [
+        '내 심장선은 무엇을 나타내나요?',
+        '오늘 나의 별자리 에너지는 어떤가요?',
+        '별들은 나에게 어떤 안내를 주나요?',
+        '긍정적인 에너지를 어떻게 끌어당길 수 있나요?'
+      ]
+    },
+
+    tarot: {
+      title: '타로 리딩',
+      subtitle: '리딩 카테고리를 선택하세요',
+      categories: {
+        love: '사랑',
+        career: '경력',
+        finance: '재정',
+        growth: '개인 성장'
+      },
+      categoryDesc: {
+        love: '관계, 로맨스 및 감정적 유대 탐구',
+        career: '직업, 야망 및 전문적 경로에 대한 통찰',
+        finance: '부, 투자 및 풍요에 대한 안내',
+        growth: '자기 발견, 영성 및 내면의 힘'
+      },
+      shuffling: '우주의 덱을 섞는 중...',
+      tapToReveal: '카드를 탭하여 지혜를 밝히세요',
+      yourCards: '당신의 카드',
+      reading: '타로 해석',
+      drawAgain: '다시 뽑기',
+      share: '리딩 공유'
+    },
+
+    daily: {
+      title: '오늘의 가이던스',
+      energy: '오늘의 에너지',
+      focus: '감정적 초점',
+      embrace: '수용하세요',
+      avoid: '피하세요',
+      lucky: '행운의 요소',
+      share: '가이던스 공유',
+      refresh: '새로운 가이던스'
+    },
+
+    horoscope: {
+      title: '운세',
+      subtitle: '별자리를 선택하세요',
+      yourSign: '당신의 별자리',
+      mood: '기분',
+      love: '사랑',
+      career: '경력',
+      advice: '조언',
+      share: '운세 공유'
+    },
+
+    love: {
+      title: '사랑 리딩',
+      subtitle: '로맨틱 에너지를 발견하세요',
+      compatibility: '호환성 인사이트',
+      energy: '사랑 에너지',
+      guidance: '마음의 안내',
+      share: '리딩 공유'
+    },
+
+    settings: {
+      title: '설정',
+      language: '언어',
+      shareApp: '앱 공유',
+      rateApp: '앱 평가',
+      privacy: '개인정보 보호정책',
+      about: '정보',
+      version: '버전'
+    },
+
+    common: {
+      loading: '로딩 중...',
+      error: '문제가 발생했습니다',
+      retry: '다시 시도',
+      back: '뒤로',
+      close: '닫기',
+      share: '공유',
+      save: '저장',
+      cancel: '취소',
+      confirm: '확인',
+      yes: '예',
+      no: '아니오',
+      ok: '확인'
+    },
+
+    exit: {
+      title: '앱 종료',
+      message: '정말 나가시겠습니까?',
+      toast: '한 번 더 누르면 종료됩니다',
+      stay: '머물기',
+      leave: '나가기'
+    },
+
+    disclaimer: {
+      text: '오락 및 자기 성찰 목적으로만 사용됩니다. 전문적인 조언을 대체하지 않습니다.',
+      short: '안내 및 성찰 목적으로만'
+    },
+
+    errors: {
+      network: '인터넷 연결 없음. 네트워크를 확인하세요.',
+      api: '서비스가 일시적으로 사용할 수 없습니다. 나중에 다시 시도하세요.',
+      image: '이미지를 처리할 수 없습니다. 다른 사진을 시도하세요.',
+      noHand: '이미지에서 손을 감지할 수 없습니다. 다시 시도하세요.',
+      generic: '문제가 발생했습니다. 다시 시도해 주세요.'
+    },
+
+    rate: {
+      title: 'AI Palm Reader가 마음에 드시나요?',
+      message: '저희 앱이 유용하다면 평가해 주시겠어요?',
+      rateNow: '지금 평가',
+      later: '나중에',
+      noThanks: '괜찮습니다'
+    },
+
+    network: {
+      offline: '오프라인 상태입니다',
+      online: '다시 온라인!'
+    }
+  }
+};
+
+export default translations;
