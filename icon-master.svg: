@@ -1,0 +1,109 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1035"/>
+      <stop offset="50%" style="stop-color:#2d1b4e"/>
+      <stop offset="100%" style="stop-color:#0f0a1e"/>
+    </linearGradient>
+    
+    <!-- Palm Gradient -->
+    <linearGradient id="palmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="50%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Star Gradient -->
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#palmGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#palmGradient)" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Stars decoration -->
+  <g opacity="0.6">
+    <!-- Top star -->
+    <path d="M256 60 L260 75 L275 75 L263 85 L268 100 L256 90 L244 100 L249 85 L237 75 L252 75 Z" fill="url(#starGradient)"/>
+    <!-- Left star -->
+    <path d="M100 200 L103 210 L113 210 L105 217 L108 227 L100 220 L92 227 L95 217 L87 210 L97 210 Z" fill="url(#starGradient)" transform="scale(0.8)"/>
+    <!-- Right star -->
+    <path d="M420 180 L423 190 L433 190 L425 197 L428 207 L420 200 L412 207 L415 197 L407 190 L417 190 Z" fill="url(#starGradient)" transform="scale(0.7)"/>
+  </g>
+  
+  <!-- Palm Hand Shape -->
+  <g filter="url(#glow)" transform="translate(256, 280) scale(0.9)">
+    <!-- Palm base -->
+    <path d="
+      M-80 60 
+      Q-85 20, -70 -20
+      Q-60 -50, -45 -80
+      L-40 -120
+      Q-38 -145, -25 -150
+      Q-12 -155, -5 -140
+      L0 -100
+      L5 -160
+      Q8 -185, 22 -190
+      Q36 -195, 42 -175
+      L45 -130
+      L55 -170
+      Q58 -190, 72 -192
+      Q86 -194, 90 -175
+      L85 -120
+      L95 -145
+      Q100 -165, 112 -165
+      Q124 -165, 125 -145
+      L115 -80
+      Q120 -40, 110 0
+      Q100 40, 80 60
+      Z
+    " fill="url(#palmGradient)" opacity="0.9"/>
+    
+    <!-- Palm lines -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6">
+      <!-- Heart line -->
+      <path d="M-50 -10 Q0 -30, 60 -15" stroke-linecap="round"/>
+      <!-- Head line -->
+      <path d="M-55 15 Q-10 5, 50 20" stroke-linecap="round"/>
+      <!-- Life line -->
+      <path d="M-30 -40 Q-50 10, -40 50" stroke-linecap="round"/>
+      <!-- Fate line -->
+      <path d="M10 50 Q5 10, 0 -30" stroke-linecap="round" opacity="0.4"/>
+    </g>
+    
+    <!-- Center eye/mystic symbol -->
+    <g transform="translate(0, 5)">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="0" cy="0" r="8" fill="#ffffff" opacity="0.7"/>
+      <circle cx="0" cy="0" r="4" fill="url(#palmGradient)"/>
+    </g>
+  </g>
+  
+  <!-- Bottom text arc would go here for full branding -->
+  
+  <!-- Decorative cosmic dots -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="120" r="2" opacity="0.5"/>
+    <circle cx="432" cy="100" r="2" opacity="0.4"/>
+    <circle cx="60" cy="380" r="1.5" opacity="0.3"/>
+    <circle cx="450" cy="350" r="2" opacity="0.5"/>
+    <circle cx="150" cy="450" r="1.5" opacity="0.4"/>
+    <circle cx="380" cy="430" r="2" opacity="0.3"/>
+  </g>
+</svg>
