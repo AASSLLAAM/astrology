@@ -149,4 +149,10 @@ export default {
   API_CONFIG,
   LINKS,
   HOME_FEATURES
+  export const SCREENS = {
+  HOME: 'HOME',
+  HOROSCOPE: 'HOROSCOPE',
+  HOROSCOPE_RESULT: 'HOROSCOPE_RESULT',
+};
+
 };
