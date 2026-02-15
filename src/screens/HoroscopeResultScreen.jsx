@@ -6,9 +6,11 @@ import HoroscopeResult from '../components/horoscope/HoroscopeResult';
 import { useLanguage } from '../hooks/useLanguage';
 import { useNavigation } from '../hooks/useNavigation';
 import { useAppContext } from '../context/AppContext';
-import { getZodiacById } from '../utils/zodiacData'; // FIXED PATH: ../ instead of ../../
+import { zodiacData } from "../utils/zodiacData";
+; // FIXED PATH: ../ instead of ../../
 import { generateAIResponse } from '../services/aiService';
 import { getHoroscopePrompt } from '../utils/systemPrompts'; // FIXED PATH
+import { zodiacData } from "../utils/zodiacData";
 
 const HoroscopeResultScreen = () => {
   const { t, language } = useLanguage();
