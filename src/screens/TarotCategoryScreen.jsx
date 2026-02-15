@@ -1,11 +1,11 @@
-import React from 'react';
+ import React from 'react';
 import AnimatedTransition from '../components/common/AnimatedTransition';
 import CosmicBackground from '../components/common/CosmicBackground';
 import Header from '../components/common/Header';
 import CategorySelector from '../components/tarot/CategorySelector';
 import { useLanguage } from '../hooks/useLanguage';
 import { useNavigation } from '../hooks/useNavigation';
-import { SCREENS } from '../../utils/constants';
+import { SCREENS } from '../utils/constants'; // Fixed path
 
 const TarotCategoryScreen = () => {
   const { t } = useLanguage();
