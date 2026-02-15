@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import AnimatedTransition from '../components/common/AnimatedTransition';
 import CosmicBackground from '../components/common/CosmicBackground';
 import Header from '../components/common/Header';
@@ -7,7 +7,7 @@ import LoveInsight from '../components/love/LoveInsight';
 import { useLanguage } from '../hooks/useLanguage';
 import { useAppContext } from '../context/AppContext';
 import { generateAIResponse } from '../services/aiService';
-import { getLoveReadingPrompt } from '../utils/systemPrompts';
+import { getLoveReadingPrompt } from '../utils/systemPrompts'; // Fixed path
 
 const LoveReadingScreen = () => {
   const { t, language } = useLanguage();
@@ -33,19 +33,10 @@ const LoveReadingScreen = () => {
       <div className="relative w-full h-full flex flex-col">
         <CosmicBackground />
         <Header title={t('love.title')} showBack={true} />
-
         <div className="p-6 mt-14 flex-1 overflow-y-auto custom-scrollbar">
-          <LoveCompatibility 
-            percentage={88} 
-            text="Your heart chakra is open and radiating warmth." 
-          />
-          
+          <LoveCompatibility percentage={88} text="Your heart chakra is open and radiating warmth." />
           <div className="mt-6 prose prose-invert prose-sm max-w-none">
-            <LoveInsight 
-              title={t('love.guidance')} 
-              content={reading} 
-              icon="💖"
-            />
+            <LoveInsight title={t('love.guidance')} content={reading} icon="💖" />
           </div>
         </div>
       </div>
