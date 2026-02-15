@@ -29,9 +29,6 @@ const HoroscopeResultScreen = () => {
       try {
         const prompt = getHoroscopePrompt(language, sign.name);
         const response = await generateAIResponse(prompt, language);
-        
-        // Simple parser to split response sections if AI formatted correctly
-        // (Assuming AI returns structured text as requested in prompt)
         setPrediction(response);
       } catch (error) {
         console.error(error);
@@ -41,7 +38,7 @@ const HoroscopeResultScreen = () => {
     };
 
     fetchHoroscope();
-  }, [signId]); // Only fetch on sign change
+  }, [signId]);
 
   if (!sign) return null;
 
