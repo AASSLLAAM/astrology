@@ -1,7 +1,6 @@
 /**
  * Zodiac Data
  * Complete data for all 12 zodiac signs.
- * Used in Horoscope, Profile, and AI prompt building.
  */
 
 export const ZODIAC_SIGNS = [
@@ -283,105 +282,30 @@ export const ZODIAC_SIGNS = [
   }
 ];
 
-/**
- * getZodiacSign
- * Determines the zodiac sign based on day and month.
- * 
- * @param {number} day - Day of birth (1-31)
- * @param {number} month - Month of birth (1-12)
- * @returns {object|null} - The zodiac sign object or null
- */
 export const getZodiacSign = (day, month) => {
   const sign = ZODIAC_SIGNS.find(z => {
-    // Handle signs that cross year boundary (Capricorn: Dec 22 - Jan 19)
     if (z.startMonth > z.endMonth) {
-      return (
-        (month === z.startMonth && day >= z.startDay) ||
-        (month === z.endMonth && day <= z.endDay)
-      );
+      return (month === z.startMonth && day >= z.startDay) || (month === z.endMonth && day <= z.endDay);
     }
-    
-    return (
-      (month === z.startMonth && day >= z.startDay) ||
-      (month === z.endMonth && day <= z.endDay)
-    );
+    return (month === z.startMonth && day >= z.startDay) || (month === z.endMonth && day <= z.endDay);
   });
-
   return sign || null;
 };
 
-/**
- * getZodiacById
- * Finds a zodiac sign by its ID.
- * 
- * @param {string} id - Zodiac sign ID (e.g., 'aries')
- * @returns {object|null}
- */
-export const getZodiacById = (id) => {
-  return ZODIAC_SIGNS.find(z => z.id === id) || null;
-};
-
-/**
- * getZodiacByName
- * Finds a zodiac sign by its name.
- * 
- * @param {string} name - Zodiac sign name (e.g., 'Aries')
- * @returns {object|null}
- */
-export const getZodiacByName = (name) => {
-  return ZODIAC_SIGNS.find(z => z.name.toLowerCase() === name.toLowerCase()) || null;
-};
-
-/**
- * getCompatibleSigns
- * Returns compatible signs for a given zodiac.
- * 
- * @param {string} id - Zodiac sign ID
- * @returns {Array} - Array of compatible sign objects
- */
+export const getZodiacById = (id) => ZODIAC_SIGNS.find(z => z.id === id) || null;
+export const getZodiacByName = (name) => ZODIAC_SIGNS.find(z => z.name.toLowerCase() === name.toLowerCase()) || null;
 export const getCompatibleSigns = (id) => {
   const sign = getZodiacById(id);
   if (!sign) return [];
-
   return sign.compatibility.map(name => getZodiacByName(name)).filter(Boolean);
 };
+export const getElementSigns = (element) => ZODIAC_SIGNS.filter(z => z.element === element);
 
-/**
- * getElementSigns
- * Returns all signs of a specific element.
- * 
- * @param {string} element - 'Fire', 'Earth', 'Air', or 'Water'
- * @returns {Array}
- */
-export const getElementSigns = (element) => {
-  return ZODIAC_SIGNS.filter(z => z.element === element);
-};
-
-/**
- * ELEMENTS
- * Element metadata for UI display.
- */
 export const ELEMENTS = {
-  Fire: {
-    color: '#EF4444',
-    icon: '🔥',
-    description: 'Passionate, dynamic, and temperamental'
-  },
-  Earth: {
-    color: '#22C55E',
-    icon: '🌍',
-    description: 'Grounded, practical, and reliable'
-  },
-  Air: {
-    color: '#3B82F6',
-    icon: '💨',
-    description: 'Intellectual, communicative, and social'
-  },
-  Water: {
-    color: '#6366F1',
-    icon: '💧',
-    description: 'Intuitive, emotional, and sensitive'
-  }
+  Fire: { color: '#EF4444', icon: '🔥', description: 'Passionate, dynamic, and temperamental' },
+  Earth: { color: '#22C55E', icon: '🌍', description: 'Grounded, practical, and reliable' },
+  Air: { color: '#3B82F6', icon: '💨', description: 'Intellectual, communicative, and social' },
+  Water: { color: '#6366F1', icon: '💧', description: 'Intuitive, emotional, and sensitive' }
 };
 
 export default {
